@@ -38,7 +38,7 @@ Pfsense will configured as a firewall to segment our private home-lab network an
 <img src="https://imgur.com/mxlf5an.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 <br />
-<b>Interface assignment<b><br />
+<b>Interface assignment</b> <br />
 
 - Enter option 1 to assign interfaces.
 - Should VLANS be set up now [y:n]?: n
@@ -67,3 +67,92 @@ This will be the all-in-one IDS, Security Monitoring, and Log Management solutio
 - Add two Network Adapters and assign them Vmnet 4 & Vmnet 5 respectively
 
 <img src="https://imgur.com/jDz2G4G.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+- Click “Finish”
+- Power the virtual machine and click Enter when prompted
+- After the initial stages of loading, type “yes” when prompted
+- Set a username & password
+- After Security Onion Reboots, Enter the username & password
+- Select “Yes”
+- Select “Install”
+- Select the EVAL option
+- Type “AGREE”
+- Select “Standard”
+- Set a hostname and a short description
+- Click the spacebar to select ens33 as the management interface
+- Set the addressing to DHCP
+- Select “YES” at the next prompt
+- Select “OK” at the next prompt
+- Select “Direct” for the next prompt
+- Select “ens35” as the Monitor Interface
+- Select “Automatic” for the OS patch schedule”
+- Accept the default home network IP
+- Accept all the defaults
+- Enter an email address and password for the admin account
+- Select “IP”
+- Select “Yes” for the NTP server & accept the defaults
+
+<b>Take note of your final settings before proceeding! The most important detail is the IP address for web access. This will be used to access Security Onion.</b>
+
+<img src="https://imgur.com/X2hskAy.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+- Select “Yes”
+
+After installing Security Onion, having access to the web interface will be done from an external Ubuntu Desktop simulating a SOC/Security Analyst accessing a SIEM or any other tool from their device.
+
+- Use sudo so-allow to create a rule on security onion to allow the ubuntu-desktop
+- Grab the IP address on the Ubuntu desktop
+
+<img src="https://imgur.com/vCD8bW2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+- Run sudo so-allow 
+
+<img src="https://imgur.com/KMF9AJc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+- Choose the option “a” (analyst)
+- Input the “Ubuntu desktop IP address”
+  
+Then log in to Ubuntu using the security onion web login address
+
+<img src="https://imgur.com/QpeLeXW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/PnoZplv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+<h3>Kali Linux</h3>
+Kali Linux will be used as an attack machine to propagate different forms of offensive actions against the Domain Controller and the other machines attached to it.
+
+
+- Configure the Kali machine 
+- Add network adapter as VMnet2
+
+<img src="https://imgur.com/uFPtBot.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+- Change the default password
+
+<img src="https://imgur.com/rEl3zct.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+- Log into pfsense GUI using the web browser on Kali and IP address 192.168.1.1 (pfsense web access address)
+- Use the default username “admin” and password “pfsense”
+
+<img src="https://imgur.com/5EhyrUh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+- Add 8.8.8.8 as your Primary DNS Server
+- Add 4.4.4.4 as your Secondary DNS Server
+- Untick the last two options
+
+<img src="https://imgur.com/yBkvwgo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<br>
+<b>Assign interfaces on pfsense</b> <br />
+
+- Click on interfaces
+- Select LAN
+- Use the below settings and save
+-	Repeat the process for other interfaces
+
+<img src="https://imgur.com/E9lgejr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/GkNKOpR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/XvlnB1X.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/ZAGjh02.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/YNzTrSF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/qPAlCSB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
