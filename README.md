@@ -38,7 +38,7 @@ Pfsense will configured as a firewall to segment our private home-lab network an
 <img src="https://imgur.com/mxlf5an.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 <br />
-<b>Interface assignment<b> <br />
+<b>Interface assignment<b><br />
 
 - Enter option 1 to assign interfaces.
 - Should VLANS be set up now [y:n]?: n
