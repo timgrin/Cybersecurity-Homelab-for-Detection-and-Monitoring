@@ -20,7 +20,8 @@ Pfsense will configured as a firewall to segment our private home-lab network an
 - Make sure “Typical (recommended)” is selected and click Next.
 - Click “Browse” and navigate to the folder where your pfsense file is located.
 - Click Next.
-<img src="https://imgur.com/nrxZXHg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<img src="https://imgur.com/cjAJSja.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 - Rename your Virtual Machine.
 - Click “Next”.
@@ -55,7 +56,7 @@ Pfsense will configured as a firewall to segment our private home-lab network an
 
 <img src="https://imgur.com/2MomZzC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<h2>Security Onion</h2>
+<h3>Security Onion</h3>
 This will be the all-in-one IDS, Security Monitoring, and Log Management solution.
 
 - Select Typical installation >> Click “Next”
