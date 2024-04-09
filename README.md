@@ -16,7 +16,8 @@ I approached this Cybersecurity project intending to enhance security by impleme
 <h3>Pfsense</h3>
 Pfsense will configured as a firewall to segment our private home-lab network and will only be accessible from our Kali Linux machine.
 
--> Click “Create a New Virtual Machine” on the VMware Workstation Home screen.
--> Make sure “Typical (recommended)” is selected and click Next.
--> Click “Browse” and navigate to the folder where your pfsense file is located.
--> Click Next.
+- Click “Create a New Virtual Machine” on the VMware Workstation Home screen.
+- Make sure “Typical (recommended)” is selected and click Next.
+- Click “Browse” and navigate to the folder where your pfsense file is located.
+- Click Next.
+<img src="https://imgur.com/nrxZXHg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
