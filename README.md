@@ -321,7 +321,8 @@ Splunk is one of the most widely used SIEMs in the Cybersecurity industry. Splun
 <b>For the Splunk server, you have one of two options
 - Accessing it with the AnalystVM using SSH
 - Installing a GUI (Ubuntu Desktop) on the Ubuntu Server </b>
-- For this homelab, I will be accessing Splunk with the AnalystVM using SSH
+
+For this homelab, I will be accessing Splunk with the AnalystVM using SSH
 - Install OpenSSH on the server by following the command below
 
 <img src="https://imgur.com/R1HHYfS.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -379,4 +380,4 @@ To log the activities on endpoints, Splunk uses a mechanism called the universal
 <img src="https://imgur.com/q2k4ABv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://imgur.com/pbxlGsY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://imgur.com/OqTexEX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<img src="https://imgur.com/undefined.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/L8KvWDc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
