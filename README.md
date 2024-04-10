@@ -288,17 +288,17 @@ This machine will be used as a user in the network. We would be connecting to th
 
 - Add Windows to Domain
 - Search “domain” and select Access work or school
-- Select Connect >> Join this device to local Active Directory Domain
+- Select Connect >> Join this device to the local Active Directory Domain
 - Enter your domain name.local (homelab.local)
-- You will be prompted to login as the domain controller administrator
-- Complete the process by clicking next and restart  the windows machine
+- You will be prompted to log in as the domain controller administrator
+- Complete the process by clicking next and restart  the Windows machine
 
 <img src="https://imgur.com/XBFsRUk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://imgur.com/ncXchqf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://imgur.com/Es5SDQR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 - Go back to the Domain controller and 
-- User has been added on Windows Server
+- User has been added to Windows Server
 
 <img src="https://imgur.com/6htTGUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
@@ -318,9 +318,9 @@ Splunk is one of the most widely used SIEMs in the Cybersecurity industry. Splun
 
 <img src="https://imgur.com/XOnJSPo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-<b>For the Splunk server, you have one of two options
+For the Splunk server, you have one of two options
 - Accessing it with the AnalystVM using SSH
-- Installing a GUI (Ubuntu Desktop) on the Ubuntu Server </b>
+- Installing a GUI (Ubuntu Desktop) on the Ubuntu Server
 
 For this homelab, I will be accessing Splunk with the AnalystVM using SSH
 - Install OpenSSH on the server by following the command below
@@ -334,7 +334,7 @@ For this homelab, I will be accessing Splunk with the AnalystVM using SSH
 <img src="https://imgur.com/fHmQF6o.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://imgur.com/6wCpBw8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-- Visit Splunk website and get the download link for Linux
+- Visit the Splunk website and get the download link for Linux
 - Install Splunk 
 - Change the directory to where the configuration file is which should be the “/bin” folder
 - Start Splunk using the “./splunk start” command
